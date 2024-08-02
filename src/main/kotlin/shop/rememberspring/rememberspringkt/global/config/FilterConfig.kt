@@ -16,8 +16,7 @@ class FilterConfig(
         FilterRegistrationBean<JwtAuthorizationFilter>().apply {
             filter = JwtAuthorizationFilter(tokenProvider)
             addUrlPatterns(
-                "/api/v1/user/diaries/*",
-                "/api/v1/user/members/*"
+                "/api/v1/user/*"
             )
         }
 }
